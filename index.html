@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bodynamic</title>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
-
   <body>
     <!-- hlavička -->
     <header>
@@ -21,10 +21,8 @@
             <p class="contact_title">PO - PÁ</p>
             <p class="contact_content">7:00 - 22:00</p>
           </div>
-        </div>
 
-        <div class="contact__days">
-          <div class="weedend">
+          <div class="week">
             <p class="contact_title">SO - NE</p>
             <p class="contact_content">6:00 - 20:00</p>
           </div>
@@ -36,62 +34,45 @@
       </div>
     </header>
 
-    <nav class="menu">
-      <ul class="menu_list">
-        <li class="menu_item">
-          <a href="/" class="menu_link">Úvod</a>
-        </li>
-
-        <li class="menu_item">
-          <a href="personal_training/personal_main.html" class="menu_link"
-            >Osobní tréninky</a
-          >
-        </li>
-
-        <li class="menu_item">
-          <a href="personal_training/personal_coach.html" class="menu_link"
-            >Trenéři</a
-          >
-        </li>
-
-        <li class="menu_item">
-          <a href="personal_training/personal_price.html" class="menu_link"
-            >Ceník</a
-          >
-        </li>
-
-        <li class="menu_item">
-          <a href="personal_training/personal_contact" class="menu_link"
-            >Kontakt</a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="/" class="menu__link">Úvod</a>
-        </li>
-        <li class="menu__item">
-          <a href="/pokoje/" class="menu__link">Pokoje</a>
-        </li>
-        <li class="menu__item">
-          <a href="/vybaveni/" class="menu__link">Vybavení</a>
-        </li>
-        <li class="menu__item">
-          <a href="/galerie/" class="menu__link">Galerie</a>
-        </li>
-        <li class="menu__item">
-          <a href="/kontakt/" class="menu__link">Kontakt</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="title">
+      <h2 class="title_main">Fitness centrum</h2>
+      <h1 class="title_name">Bodynamic</h1>
+    </div>
 
     <!-- hlavní obsah -->
-    <main></main>
+    <main>
+      <div class="offer">
+        <div class="offer_personal">
+          <img
+            class="offer_img"
+            src="images/personal.jpg"
+            alt="Osobní tréninky"
+          />
+          <p class="offer_text">Osobní tréninky</p>
+        </div>
 
-    <!-- patička -->
-    <footer></footer>
+        <div class="offer_group">
+          <img
+            class="offer_img"
+            src="images/yoga_small.jpg"
+            alt="Skupinové lekce"
+          />
+          <p class="offer_text">Skupinové lekce</p>
+        </div>
+
+        <div class="offer_food">
+          <img
+            class="offer_img"
+            src="images/food-small.jpg"
+            alt="Výživové poradenství"
+          />
+          <p class="offer_text">Výživové poradenství</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright">2022 Nikola Hlawiczková</div>
+    </footer>
   </body>
 </html>

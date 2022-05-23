@@ -1,7 +1,9 @@
+$spacer: 30px;
+$backcolor: whitesmoke;
+
 html {
   box-sizing: border-box;
 }
-
 *,
 :after,
 :before {
@@ -13,44 +15,54 @@ body {
   padding: 0;
 }
 
+//MOBILE FIRST- DODĚLAT
+
+//hlavička
 .contact {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  background-color: whitesmoke;
-}
-.contact .week {
-  display: flex;
-  gap: 10px;
-}
-.contact .contact_opened {
-  display: inline-block;
-}
-.contact .contact_title {
-  margin: 0;
-  font-weight: bold;
-}
-.contact .contact_content {
-  margin: 0;
+  padding: $spacer/2;
+  background-color: $backcolor;
+
+  .week {
+    display: flex;
+    gap: 10px;
+  }
+
+  .contact_opened {
+    display: inline-block;
+  }
+
+  .contact_title {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .contact_content {
+    margin: 0;
+  }
 }
 
+//úvodní stránka_NADPIS_FOTO
 .title {
-  margin: 30px 0;
+  margin: $spacer 0;
   text-align: center;
-}
-.title .title_main {
-  margin: 0;
-  font-size: 50px;
-}
-.title .title_name {
-  margin: 0;
-  font-size: 100px;
+
+  .title_main {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  .title_name {
+    margin: 0;
+    font-size: 100px;
+  }
 }
 
 .offer {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: $spacer;
 }
 
 .offer_personal,
@@ -63,6 +75,7 @@ body {
   position: absolute;
   bottom: 1px;
   width: 100%;
+
   padding: 10px 0;
   margin: 0;
   text-align: center;
@@ -76,8 +89,7 @@ body {
   display: flex;
   width: 330px;
   height: 330px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 1px solid black;
   border-radius: 5%;
 }
@@ -89,11 +101,12 @@ body {
   top: 20px;
 }
 
+//patička
 footer {
   position: absolute;
   bottom: 0;
-  padding: 15px;
+  padding: $spacer/2;
   width: 100%;
   text-align: center;
-  background-color: whitesmoke;
-}/*# sourceMappingURL=style.css.map */
+  background-color: $backcolor;
+}

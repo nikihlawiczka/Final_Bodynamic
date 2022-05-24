@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 //MOBILE FIRST- DODĚLAT
@@ -22,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: $spacer/2;
-  background-color: $backcolor;
+  background-color: #222;
 
   .week {
     display: flex;
@@ -36,10 +37,12 @@ body {
   .contact_title {
     margin: 0;
     font-weight: bold;
+    color: white;
   }
 
   .contact_content {
     margin: 0;
+    color: white;
   }
 }
 
@@ -68,7 +71,12 @@ body {
 .offer_personal,
 .offer_group,
 .offer_food {
+  width: 330px;
+  height: 330px;
+  outline: 1px solid black;
+  border-radius: 5%;
   position: relative;
+  overflow: hidden;
 }
 
 .offer_text {
@@ -79,34 +87,43 @@ body {
   padding: 10px 0;
   margin: 0;
   text-align: center;
-  background-color: red;
+  background-color: whitesmoke;
   opacity: 0.5;
-  /* border-radius: 0 0 5% 5%;
-  overflow: hidden; */
+  color: black;
+  font-weight: bold;
 }
 
 .offer_img {
-  display: flex;
-  width: 330px;
-  height: 330px;
   object-fit: cover;
-  border: 1px solid black;
-  border-radius: 5%;
+  transition: transform 0.75s;
 }
 
-.offer_personal:hover,
-.offer_group:hover,
-.offer_food:hover {
-  position: relative;
-  top: 20px;
+.offer_img:hover {
+  transform: scale(1.15);
 }
 
 //patička
 footer {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   padding: $spacer/2;
   width: 100%;
+  text-align: center;
+  background-color: #222;
+}
+
+.footer__copyright {
+  color: white;
+}
+
+.footer_socialnetwork {
+  text-decoration: none;
+  color: black;
+}
+
+.socialnetwork {
+  padding: $spacer/2;
+  margin-top: $spacer;
   text-align: center;
   background-color: $backcolor;
 }

@@ -15,30 +15,8 @@
   </head>
   <body>
     <!-- hlavička -->
-    <header>
-      <div class="contact">
-        <div class="contact__mobile">
-          <p class="contact_title">Mobil</p>
-          <p class="contact_content">+736 627 817</p>
-        </div>
 
-        <div class="contact__opened">
-          <div class="week">
-            <p class="contact_title">PO - PÁ</p>
-            <p class="contact_content">7:00 - 22:00</p>
-          </div>
-
-          <div class="week">
-            <p class="contact_title">SO - NE</p>
-            <p class="contact_content">6:00 - 20:00</p>
-          </div>
-        </div>
-
-        <div class="contact__where">
-          <p class="contact_title">Frýdek - Místek 62</p>
-        </div>
-      </div>
-    </header>
+    {% include 'partial/header.njk' %}
 
     <div class="title">
       <h2 class="title_main">Fitness centrum</h2>
@@ -50,18 +28,7 @@
       {{ content | safe }}
     </main>
 
-    <div class="socialnetwork">
-      <a href="https://www.facebook.com/" class="footer_socialnetwork">
-        Facebook
-      </a>
-      <br />
-      <a href="https://www.instagram.com/" class="footer_socialnetwork">
-        Instagram
-      </a>
-    </div>
-
-    <footer class="footer">
-      <div class="footer__copyright">2022 Nikola Hlawiczková</div>
-    </footer>
+    {% include 'partial/social_network.njk' %} {% include 'partial/footer.njk'
+    %}
   </body>
 </html>

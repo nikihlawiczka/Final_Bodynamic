@@ -1,0 +1,21 @@
+@use "color";
+
+.menu {
+  background-color: color.$lightblack;
+}
+
+.menu_list {
+  margin: 0;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: $spacer;
+}
+
+.menu_link {
+  padding: $spacer;
+  text-decoration: none;
+  color: red;
+  font-size: 30px;
+}

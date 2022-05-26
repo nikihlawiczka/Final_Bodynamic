@@ -18,7 +18,18 @@
 
     {% include 'partial/header.njk' %}
 
+    <!-- uvodní foto -->
+    <img
+      class="main_photo"
+      src="/images/workout_bigger_cropp.jpg"
+      alt="Úvodní fotka"
+    />
+
+    <!-- menu -->
+    {% include 'partial/menu_personal.njk' %}
+
     <!-- hlavní obsah -->
+
     <main>
       {{ content | safe }}
     </main>

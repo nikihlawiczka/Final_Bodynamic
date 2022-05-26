@@ -1,0 +1,41 @@
+@use "color";
+
+.offer {
+  display: flex;
+  justify-content: center;
+  gap: $spacer;
+}
+
+.offer_personal,
+.offer_group,
+.offer_food {
+  width: 330px;
+  height: 330px;
+  outline: 1px solid black;
+  border-radius: 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer_text {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+  background-color: color.$white;
+  opacity: 0.5;
+  color: black;
+  font-weight: bold;
+}
+
+.offer_img {
+  object-fit: cover;
+  transition: transform 0.75s;
+}
+
+.offer_img:hover {
+  transform: scale(1.15);
+}

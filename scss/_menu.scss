@@ -1,7 +1,7 @@
-@use "color";
+@use "value";
 
 .menu {
-  background-color: color.$lightblack;
+  background-color: value.$lightblack;
 }
 
 .menu_list {
@@ -14,8 +14,8 @@
 }
 
 .menu_link {
-  padding: $spacer;
+  padding: value.$spacer;
   text-decoration: none;
-  color: red;
+  color: black;
   font-size: 30px;
 }

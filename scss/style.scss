@@ -5,3 +5,18 @@
 @use "offer";
 @use "photo";
 @use "value";
+
+.title {
+  text-align: center;
+  margin: value.$spacer;
+}
+
+.title_main {
+  font-size: 40px;
+  margin: 0;
+}
+
+.title_name {
+  font-size: 80px;
+  margin: 0%;
+}

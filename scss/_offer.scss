@@ -3,7 +3,7 @@
 .offer {
   display: flex;
   justify-content: center;
-  gap: $spacer;
+  gap: value.$spacer;
 }
 
 .offer_personal,

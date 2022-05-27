@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: $spacer;
+  gap: value.$spacer;
 }
 
 .menu_link {

@@ -3,7 +3,7 @@
 footer {
   position: relative;
   bottom: 0;
-  padding: $spacer/2;
+  padding: value.$spacer/2;
   width: 100%;
   text-align: center;
   background-color: value.$lightblack;

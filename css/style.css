@@ -121,6 +121,7 @@ footer {
   opacity: 0.5;
   color: black;
   font-weight: bold;
+  font-weight: bold;
 }
 
 .offer_img {
@@ -138,15 +139,29 @@ footer {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  gap: 30px;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  grid-auto-flow: row;
+  gap: 2px 2px;
+}
+
+.album_photo {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 .view {
   margin: auto;
   width: calc(100% - 200px);
-}
-
-.text {
-  text-align: justify;
 }
 
 .title {
@@ -162,4 +177,59 @@ footer {
 .title_name {
   font-size: 80px;
   margin: 0%;
+}
+
+.text {
+  text-align: justify;
+}
+
+.text_head {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text_text {
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.foto_coach,
+.foto_coach_jahodova {
+  width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5%;
+}
+
+.foto_coach_jahodova {
+  order: 1;
+}
+
+.meet_coach {
+  display: flex;
+  align-items: center;
+  margin: 60px;
+  gap: 30px;
+}
+
+.coach_name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.coach_tale {
+  margin: 10px 0;
+  font-style: italic;
+}
+.coach_tale .coach_normal {
+  margin-top: 10px;
+  font-style: normal;
+}
+
+.a_link {
+  text-decoration: none;
+  color: rgb(252, 176, 158);
 }/*# sourceMappingURL=style.css.map */

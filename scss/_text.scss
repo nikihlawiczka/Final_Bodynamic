@@ -1,5 +1,31 @@
 @use "value";
 
+.title {
+  text-align: center;
+  margin: value.$spacer;
+}
+
+.title_main {
+  font-size: 40px;
+  margin: 0;
+}
+
+.title_name {
+  font-size: 80px;
+  margin: 0%;
+}
+
 .text {
   text-align: justify;
+}
+
+.text_head {
+  margin-bottom: value.$spacer/3;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text_text {
+  margin-top: value.$spacer/3;
+  margin-bottom: value.$spacer * 2;
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bodynamic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- hlavička -->
+
+    {% include 'partial/header.njk' %}
+
+    <!-- uvodní foto -->
+    <img
+      class="main_photo"
+      src="/images/main_group_crop.jpg"
+      alt="Úvodní fotka"
+    />
+
+    <!-- menu -->
+    {% include 'partial/menu_group.njk' %}
+
+    <!-- hlavní obsah -->
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <!-- sociální sítě -->
+    {% include 'partial/social_network.njk' %} {% include 'partial/footer.njk'
+    %}
+  </body>
+</html>

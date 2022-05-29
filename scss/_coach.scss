@@ -1,0 +1,40 @@
+@use "value";
+
+.foto_coach,
+.foto_coach_jahodova {
+  width: 300px;
+  height: fit-content;
+  border-radius: 5%;
+}
+
+.foto_coach_jahodova {
+  order: 1;
+}
+
+.meet_coach {
+  display: flex;
+  align-items: center;
+  margin: value.$spacer * 2;
+  gap: value.$spacer;
+}
+
+.coach_name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.coach_tale {
+  margin: value.$spacer/3 0;
+  font-style: italic;
+
+  .coach_normal {
+    margin-top: value.$spacer/3;
+    font-style: normal;
+  }
+}
+
+.a_link {
+  text-decoration: none;
+  color: rgb(252, 176, 158);
+}

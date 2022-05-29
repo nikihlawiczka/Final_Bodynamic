@@ -1,27 +1,54 @@
 @use "value";
 
-.menu {
-  background-color: value.$lightblack;
-  margin-bottom: value.$spacer;
+.menu_checkbox {
+  position: absolute;
+  left: -9999px;
 }
 
 .menu_list {
+  display: none;
   margin: 0;
-  padding: 2px;
-  display: flex;
-  justify-content: center;
+  padding: 0;
   list-style: none;
-  gap: value.$spacer;
+  background-color: value.$lightblack;
+}
+
+.menu_item {
+  border-bottom: 1px solid white;
 }
 
 .menu_link {
+  display: block;
+  padding: value.$spacer/3;
   text-decoration: none;
   color: value.$white;
-  font-size: 30px;
+  font-size: value.$spacer/2;
 }
 
-.menu_link:hover,
-.menu_link:active {
+.menu_link:hover {
   background-color: rgb(252, 176, 158);
   color: value.$lightblack;
+}
+
+.menu_checkbox:checked ~ .menu_list {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .menu_toggler {
+    display: none;
+  }
+
+  .menu_list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu_item {
+    border-right: 1px solid white;
+    border-bottom: 0;
+  }
+  .menu_link {
+    font-size: value.$spacer/1.5;
+  }
 }

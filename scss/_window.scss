@@ -2,5 +2,12 @@
 
 .view {
   margin: auto;
-  width: calc(100% - 200px);
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .view {
+    margin: auto;
+    width: calc(100% - 100px);
+  }
 }

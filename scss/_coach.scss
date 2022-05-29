@@ -1,27 +1,27 @@
 @use "value";
 
+.a_link {
+  text-decoration: none;
+  color: rgb(252, 176, 158);
+}
+
+.meet {
+  text-align: center;
+}
+.meet_coach {
+  margin: value.$spacer;
+}
+
 .foto_coach,
 .foto_coach_jahodova {
   width: 300px;
-  height: fit-content;
   border-radius: 5%;
-}
-
-.foto_coach_jahodova {
-  order: 1;
-}
-
-.meet_coach {
-  display: flex;
-  align-items: center;
-  margin: value.$spacer * 2;
-  gap: value.$spacer;
 }
 
 .coach_name {
   margin: 0;
   font-weight: bold;
-  font-size: 30px;
+  font-size: value.$spacer;
 }
 
 .coach_tale {
@@ -34,7 +34,15 @@
   }
 }
 
-.a_link {
-  text-decoration: none;
-  color: rgb(252, 176, 158);
+@media screen and(min-width: 700px) {
+  .meet_coach {
+    display: flex;
+    margin: value.$spacer * 2;
+    align-items: center;
+    gap: value.$spacer;
+  }
+
+  .foto_coach_jahodova {
+    order: 1;
+  }
 }

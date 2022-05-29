@@ -1,3 +1,5 @@
+@use "value";
+
 html {
   box-sizing: border-box;
 }
@@ -21,4 +23,13 @@ main {
 
 .contact__mobile-mobil {
   display: none;
+}
+
+.a_link {
+  text-decoration: none;
+  color: rgb(252, 176, 158);
+}
+
+.a_link:hover {
+  background-color: value.$lightblack;
 }

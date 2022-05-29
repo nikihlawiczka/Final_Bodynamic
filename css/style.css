@@ -23,6 +23,15 @@ main {
   display: none;
 }
 
+.a_link {
+  text-decoration: none;
+  color: rgb(252, 176, 158);
+}
+
+.a_link:hover {
+  background-color: #222;
+}
+
 .contact {
   display: flex;
   justify-content: space-between;
@@ -301,11 +310,6 @@ footer {
     text-align: justify;
   }
 }
-.a_link {
-  text-decoration: none;
-  color: rgb(252, 176, 158);
-}
-
 .meet {
   text-align: center;
 }
@@ -345,5 +349,34 @@ footer {
 
   .foto_coach_jahodova {
     order: 1;
+  }
+}
+.tab {
+  margin: 30px 0;
+}
+
+.tab_item {
+  margin: 30px;
+  text-align: center;
+}
+
+.tab_main {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.tab_next {
+  margin: 0;
+}
+
+.tab_hour {
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .tab {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+@use "value";
+
+.tab {
+  margin: value.$spacer 0;
+}
+
+.tab_item {
+  margin: value.$spacer;
+  text-align: center;
+}
+
+.tab_main {
+  margin: value.$spacer/3 0;
+  font-weight: bold;
+}
+
+.tab_next {
+  margin: 0;
+}
+
+.tab_hour {
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .tab {
+    display: flex;
+    justify-content: space-evenly;
+    gap: value.$spacer;
+  }
+}

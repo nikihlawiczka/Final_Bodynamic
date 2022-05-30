@@ -1,1 +1,25 @@
 @use "value";
+
+.tab_main {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tab_title {
+  font-weight: bold;
+}
+
+.tab_photo {
+  width: 300px;
+  border-radius: 5%;
+  border: 1px solid value.$lightblack;
+}
+@media screen and (min-width: 600px) {
+  .tab {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,42 @@
+@use "value";
+
+.group {
+  text-align: center;
+}
+.group_main {
+  margin: value.$spacer;
+}
+
+.group_name {
+  margin: 0;
+  font-weight: bold;
+  font-size: value.$spacer;
+}
+
+.foto_group,
+.foto_group_dif {
+  width: 300px;
+  border-radius: 5%;
+}
+
+.group_tale {
+  margin: value.$spacer/3 0;
+}
+
+.group_normal {
+  margin-top: value.$spacer/3;
+  font-style: normal;
+}
+
+@media screen and(min-width: 700px) {
+  .group_main {
+    display: flex;
+    margin: value.$spacer * 2;
+    align-items: center;
+    gap: value.$spacer;
+  }
+
+  .foto_group_dif {
+    order: 1;
+  }
+}

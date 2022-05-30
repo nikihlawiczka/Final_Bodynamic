@@ -1,9 +1,5 @@
 @use "value";
 
-.tab {
-  margin: value.$spacer 0;
-}
-
 .tab_item {
   margin: value.$spacer;
   text-align: center;
@@ -14,18 +10,17 @@
   font-weight: bold;
 }
 
-.tab_next {
-  margin: 0;
-}
-
-.tab_hour {
-  margin: 0;
+.tab__main {
+  display: flex;
+  gap: value.$spacer/2;
 }
 
 @media screen and (min-width: 600px) {
-  .tab {
-    display: flex;
-    justify-content: space-evenly;
-    gap: value.$spacer;
+  .tab_price {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
   }
 }

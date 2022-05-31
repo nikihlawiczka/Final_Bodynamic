@@ -1,0 +1,18 @@
+.envelope {
+  margin: auto;
+}
+
+.envelope_main {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ffa895;
+  background-color: #222;
+}
+
+.content_main {
+  font-weight: bold;
+}
+
+.envelope_row_L {
+  background-color: whitesmoke;
+}/*# sourceMappingURL=envelope.css.map */

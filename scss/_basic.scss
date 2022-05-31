@@ -28,7 +28,7 @@ main {
 
 .a_link {
   text-decoration: none;
-  color: rgb(252, 176, 158);
+  color: value.$red;
 }
 
 .a_link:hover {
@@ -41,4 +41,14 @@ main {
 
 hr {
   margin: 0;
+}
+
+.first {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hr_small {
+  margin: value.$spacer auto value.$spacer auto;
+  width: 200px;
 }

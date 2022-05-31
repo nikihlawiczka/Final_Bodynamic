@@ -25,13 +25,29 @@
   font-size: value.$spacer/2;
 }
 
+.menu_link_first {
+  display: block;
+  padding: value.$spacer/3;
+  text-decoration: none;
+  color: value.$white;
+  font-size: value.$spacer/1.5;
+  font-family: "Satisfy", cursive;
+  color: value.$red;
+}
+
 .menu_link:hover {
-  background-color: rgb(252, 176, 158);
+  background-color: value.$red;
   color: value.$lightblack;
 }
 
 .menu_checkbox:checked ~ .menu_list {
   display: block;
+}
+
+.menu_toggler {
+  display: block;
+  color: white;
+  background-color: value.$lightblack;
 }
 
 @media screen and (min-width: 600px) {

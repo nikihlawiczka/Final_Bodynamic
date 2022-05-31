@@ -26,7 +26,7 @@ main {
 
 .a_link {
   text-decoration: none;
-  color: rgb(252, 176, 158);
+  color: #ffa895;
 }
 
 .a_link:hover {
@@ -39,6 +39,16 @@ main {
 
 hr {
   margin: 0;
+}
+
+.first {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hr_small {
+  margin: 30px auto 30px auto;
+  width: 200px;
 }
 
 .contact {
@@ -58,11 +68,6 @@ hr {
   gap: 5px;
 }
 
-/* .contact {
-  display: flex;
-  justify-content: space-between;
-  padding: value.$spacer/2;
-  background-color: value.$lightblack; */
 .week {
   display: flex;
   gap: 10px;
@@ -117,13 +122,29 @@ hr {
   font-size: 15px;
 }
 
+.menu_link_first {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "Satisfy", cursive;
+  color: #ffa895;
+}
+
 .menu_link:hover {
-  background-color: rgb(252, 176, 158);
+  background-color: #ffa895;
   color: #222;
 }
 
 .menu_checkbox:checked ~ .menu_list {
   display: block;
+}
+
+.menu_toggler {
+  display: block;
+  color: white;
+  background-color: #222;
 }
 
 @media screen and (min-width: 600px) {
@@ -158,26 +179,6 @@ footer {
   color: white;
 }
 
-.footer_socialnetwork {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-.footer_socialnetwork:hover {
-  background-color: rgb(252, 176, 158);
-}
-
-.socialnetwork {
-  background-color: whitesmoke;
-  padding: 15px;
-  text-align: center;
-}
-
-.wrap {
-  margin-top: 30px;
-}
-
 .offer_personal,
 .offer_group,
 .offer_food {
@@ -200,9 +201,9 @@ footer {
 .offer_text {
   position: absolute;
   bottom: 1px;
-  width: 100%;
   padding: 10px 0;
   margin: 0;
+  width: 100%;
   text-align: center;
   background-color: whitesmoke;
   opacity: 0.5;
@@ -243,7 +244,7 @@ footer {
 
 .album {
   display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 300px));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   justify-items: center;
   align-items: center;
   justify-content: center;
@@ -257,9 +258,8 @@ footer {
 
 .album img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
+  /*  object-fit: cover;
+  overflow: hidden; */
   border-radius: 5%;
 }
 
@@ -288,11 +288,16 @@ footer {
   margin: 0;
   font-family: "Satisfy", cursive;
   font-size: 80px;
+  color: #ffa895;
 }
 
-/* .text {
-  text-align: justify;
-} */
+.text_text {
+  margin: auto;
+  text-align: center;
+  width: calc(100% - 200px);
+  /* background-color: value.$white; */
+}
+
 .text_head {
   margin: 0;
   padding: 30px 0 0 0;
@@ -309,7 +314,7 @@ footer {
 
 .text_text {
   margin-top: 15px;
-  margin-bottom: 60px;
+  /*  margin-bottom: value.$spacer * 2; */
 }
 
 @media screen and (min-width: 700px) {
@@ -371,7 +376,7 @@ footer {
   }
 }
 .tab_item {
-  margin: 30px;
+  margin: 0 30px 30px 0;
   text-align: center;
 }
 
@@ -390,7 +395,7 @@ footer {
   .tab_price {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    /* justify-items: center */
+    margin: 0;
     align-items: center;
     justify-content: center;
   }
@@ -459,4 +464,83 @@ footer {
   .foto_group_dif {
     order: 1;
   }
+}
+.meet_ {
+  text-align: center;
+}
+
+.foto_terapeut {
+  width: 300px;
+  border-radius: 5%;
+}
+
+.meet_terapeut {
+  margin: 30px;
+}
+
+.terapeut_name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.terapeut_tale {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+@media screen and (min-width: 700px) {
+  .meet_terapeut {
+    display: flex;
+    margin: 60px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .foto_terapeut {
+    order: 1;
+  }
+
+  .meet_ {
+    margin: auto;
+    text-align: center;
+    width: calc(100% - 100px);
+  }
+}
+.wrap {
+  margin-top: 30px;
+}
+
+.footer_socialnetwork {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.footer_socialnetwork:hover {
+  background-color: rgb(252, 176, 158);
+}
+
+.socialnetwork {
+  background-color: whitesmoke;
+  padding: 15px;
+  text-align: center;
+}
+
+.envelope {
+  margin: auto;
+  gap: 5px;
+}
+
+.envelope_main {
+  margin: auto;
+  color: #ffa895;
+}
+
+.content_main {
+  font-weight: bold;
+}
+
+.content_main_L {
+  background-color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */

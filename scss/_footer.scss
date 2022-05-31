@@ -12,22 +12,3 @@ footer {
 .footer__copyright {
   color: white;
 }
-
-.footer_socialnetwork {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-.footer_socialnetwork:hover {
-  background-color: rgb(252, 176, 158);
-}
-
-.socialnetwork {
-  background-color: value.$white;
-  padding: value.$spacer/2;
-  text-align: center;
-}
-
-.wrap {
-  margin-top: value.$spacer;
-}

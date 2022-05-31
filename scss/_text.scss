@@ -1,5 +1,6 @@
 @use "value";
 
+////////// hlavní stránka
 .title {
   margin: value.$spacer/2 auto;
   text-align: center;
@@ -14,11 +15,16 @@
   margin: 0;
   font-family: "Satisfy", cursive;
   font-size: 80px;
+  color: value.$red;
 }
 
-/* .text {
-  text-align: justify;
-} */
+/////////////////
+.text_text {
+  margin: auto;
+  text-align: center;
+  width: calc(100% - 200px);
+  /* background-color: value.$white; */
+}
 
 .text_head {
   margin: 0;
@@ -36,7 +42,7 @@
 
 .text_text {
   margin-top: value.$spacer/2;
-  margin-bottom: value.$spacer * 2;
+  /*  margin-bottom: value.$spacer * 2; */
 }
 
 @media screen and (min-width: 700px) {

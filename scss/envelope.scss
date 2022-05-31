@@ -1,0 +1,20 @@
+@use "value";
+
+.envelope {
+  margin: auto;
+}
+
+.envelope_main {
+  margin-top: value.$spacer/3;
+  font-size: value.$spacer/1.5;
+  color: value.$red;
+  background-color: value.$lightblack;
+}
+
+.content_main {
+  font-weight: bold;
+}
+
+.envelope_row_L {
+  background-color: value.$white;
+}

@@ -1,7 +1,7 @@
 @use "value";
 
 .tab_item {
-  margin: value.$spacer;
+  margin: 0 value.$spacer value.$spacer 0;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@
   .tab_price {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    /* justify-items: center */
+    margin: 0;
     align-items: center;
     justify-content: center;
   }

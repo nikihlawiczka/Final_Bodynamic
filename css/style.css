@@ -529,11 +529,11 @@ footer {
 
 .envelope {
   margin: auto;
-  gap: 5px;
 }
 
 .envelope_main {
-  margin: auto;
+  margin-top: 10px;
+  font-size: 20px;
   color: #ffa895;
 }
 
@@ -541,6 +541,6 @@ footer {
   font-weight: bold;
 }
 
-.content_main_L {
+.envelope_row_c {
   background-color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */

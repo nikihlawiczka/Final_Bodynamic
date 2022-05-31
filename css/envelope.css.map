@@ -1,1 +1,1 @@
-{"version":3,"sources":["../scss/envelope.scss","envelope.css","../scss/_value.scss"],"names":[],"mappings":"AAEA;EACE,YAAA;ACDF;;ADIA;EACE,gBAAA;EACA,eAAA;EACA,cENI;EFOJ,sBERW;ADOb;;ADIA;EACE,iBAAA;ACDF;;ADIA;EACE,4BElBM;ADiBR","file":"envelope.css"}
+{"version":3,"sources":["../scss/envelope.scss","envelope.css","../scss/_value.scss"],"names":[],"mappings":"AAEA;EACE,YAAA;ACDF;;ADIA;EACE,gBAAA;EACA,eAAA;EACA,cENI;EFOJ,yBAAA;ACDF;;ADIA;EACE,iBAAA;ACDF;;ADIA;EACE,4BElBM;ADiBR","file":"envelope.css"}

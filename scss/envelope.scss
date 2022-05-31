@@ -8,13 +8,13 @@
   margin-top: value.$spacer/3;
   font-size: value.$spacer/1.5;
   color: value.$red;
-  background-color: value.$lightblack;
+  text-transform: uppercase;
 }
 
 .content_main {
   font-weight: bold;
 }
 
-.envelope_row_L {
+.envelope_row_c {
   background-color: value.$white;
 }

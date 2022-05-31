@@ -18,10 +18,16 @@ footer {
   color: black;
   font-size: 20px;
 }
+.footer_socialnetwork:hover {
+  background-color: rgb(252, 176, 158);
+}
 
 .socialnetwork {
-  padding: value.$spacer/2;
-  margin-top: value.$spacer;
-  text-align: center;
   background-color: value.$white;
+  padding: value.$spacer/2;
+  text-align: center;
+}
+
+.wrap {
+  margin-top: value.$spacer;
 }

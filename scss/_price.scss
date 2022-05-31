@@ -12,6 +12,7 @@
 
 .tab__main {
   display: flex;
+  justify-content: center;
   gap: value.$spacer/2;
 }
 
@@ -19,7 +20,7 @@
   .tab_price {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-items: center;
+    /* justify-items: center */
     align-items: center;
     justify-content: center;
   }

@@ -33,6 +33,14 @@ main {
   background-color: #222;
 }
 
+.background {
+  background-color: whitesmoke;
+}
+
+hr {
+  margin: 0;
+}
+
 .contact {
   display: flex;
   justify-content: space-between;
@@ -156,11 +164,18 @@ footer {
   font-size: 20px;
 }
 
+.footer_socialnetwork:hover {
+  background-color: rgb(252, 176, 158);
+}
+
 .socialnetwork {
-  padding: 15px;
-  margin-top: 30px;
-  text-align: center;
   background-color: whitesmoke;
+  padding: 15px;
+  text-align: center;
+}
+
+.wrap {
+  margin-top: 30px;
 }
 
 .offer_personal,
@@ -266,31 +281,34 @@ footer {
 
 .title_main {
   margin: 0;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .title_name {
   margin: 0;
-  font-size: 70px;
+  font-family: "Satisfy", cursive;
+  font-size: 80px;
 }
 
 /* .text {
   text-align: justify;
 } */
 .text_head {
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 30px 0 0 0;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
 }
 
 .text__head {
+  margin-bottom: 0;
   text-align: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .text_text {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 60px;
 }
 
@@ -300,11 +318,11 @@ footer {
   }
 
   .title_main {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .title_name {
-    font-size: 80px;
+    font-size: 90px;
   }
 
   .text {
@@ -364,6 +382,7 @@ footer {
 
 .tab__main {
   display: flex;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -371,7 +390,7 @@ footer {
   .tab_price {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-items: center;
+    /* justify-items: center */
     align-items: center;
     justify-content: center;
   }
@@ -395,7 +414,7 @@ footer {
   .tab {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    justify-items: center;
+    justify-items: space-between;
     align-items: center;
     justify-content: center;
   }

@@ -18,7 +18,7 @@
   .tab {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    justify-items: center;
+    justify-items: space-between;
     align-items: center;
     justify-content: center;
   }

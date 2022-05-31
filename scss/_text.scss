@@ -7,12 +7,13 @@
 
 .title_main {
   margin: 0;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .title_name {
   margin: 0;
-  font-size: 70px;
+  font-family: "Satisfy", cursive;
+  font-size: 80px;
 }
 
 /* .text {
@@ -20,19 +21,21 @@
 } */
 
 .text_head {
-  margin-bottom: value.$spacer/3;
+  margin: 0;
+  padding: value.$spacer 0 0 0;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
 }
 
 .text__head {
+  margin-bottom: 0;
   text-align: center;
-  margin-bottom: value.$spacer;
+  padding-bottom: value.$spacer;
 }
 
 .text_text {
-  margin-top: value.$spacer/3;
+  margin-top: value.$spacer/2;
   margin-bottom: value.$spacer * 2;
 }
 
@@ -42,10 +45,11 @@
   }
 
   .title_main {
-    font-size: 40px;
+    font-size: 35px;
   }
+
   .title_name {
-    font-size: 80px;
+    font-size: 90px;
   }
   .text {
     text-align: justify;

@@ -1,9 +1,10 @@
 .envelope {
   margin: auto;
+  border-spacing: 0;
 }
 
 .envelope_main {
-  margin-top: 10px;
+  margin: 15px 0;
   font-size: 20px;
   color: #ffa895;
   text-transform: uppercase;
@@ -14,7 +15,15 @@
 }
 
 .envelope_row_c {
-  margin: 10px;
+  margin: 0;
+}
+.envelope_row_c .content_main,
+.envelope_row_c .content_next {
+  background-color: whitesmoke;
+}
+
+.content_next {
+  text-align: right;
 }
 
 .content_main,
@@ -26,6 +35,10 @@
   .content_main,
 .content_next {
     display: block;
+  }
+
+  .content_main,
+.content_next {
     text-align: center;
   }
 }/*# sourceMappingURL=envelope.css.map */

@@ -2,10 +2,11 @@
 
 .envelope {
   margin: auto;
+  border-spacing: 0;
 }
 
 .envelope_main {
-  margin-top: value.$spacer/3;
+  margin: value.$spacer/2 0;
   font-size: value.$spacer/1.5;
   color: value.$red;
   text-transform: uppercase;
@@ -16,7 +17,16 @@
 }
 
 .envelope_row_c {
-  margin: value.$spacer/3;
+  margin: 0;
+
+  .content_main,
+  .content_next {
+    background-color: value.$white;
+  }
+}
+
+.content_next {
+  text-align: right;
 }
 
 .content_main,
@@ -28,6 +38,9 @@
   .content_main,
   .content_next {
     display: block;
+  }
+  .content_main,
+  .content_next {
     text-align: center;
   }
 }

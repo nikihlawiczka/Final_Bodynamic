@@ -61,9 +61,13 @@
   }
 
   .menu_item {
-    border-right: 1px solid white;
     border-bottom: 0;
   }
+
+  .menu_item:not(:last-child) {
+    border-right: 1px solid white;
+  }
+
   .menu_link {
     font-size: value.$spacer/1.5;
   }

@@ -158,8 +158,11 @@ hr {
   }
 
   .menu_item {
-    border-right: 1px solid white;
     border-bottom: 0;
+  }
+
+  .menu_item:not(:last-child) {
+    border-right: 1px solid white;
   }
 
   .menu_link {
@@ -571,10 +574,11 @@ footer {
 
 .envelope {
   margin: auto;
+  border-spacing: 0;
 }
 
 .envelope_main {
-  margin-top: 10px;
+  margin: 15px 0;
   font-size: 20px;
   color: #ffa895;
   text-transform: uppercase;
@@ -585,7 +589,15 @@ footer {
 }
 
 .envelope_row_c {
-  margin: 10px;
+  margin: 0;
+}
+.envelope_row_c .content_main,
+.envelope_row_c .content_next {
+  background-color: whitesmoke;
+}
+
+.content_next {
+  text-align: right;
 }
 
 .content_main,
@@ -597,6 +609,10 @@ footer {
   .content_main,
 .content_next {
     display: block;
+  }
+
+  .content_main,
+.content_next {
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

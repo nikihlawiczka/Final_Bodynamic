@@ -14,5 +14,18 @@
 }
 
 .envelope_row_c {
-  background-color: whitesmoke;
+  margin: 10px;
+}
+
+.content_main,
+.content_next {
+  padding: 7.5px;
+}
+
+@media screen and (max-width: 700px) {
+  .content_main,
+.content_next {
+    display: block;
+    text-align: center;
+  }
 }/*# sourceMappingURL=envelope.css.map */

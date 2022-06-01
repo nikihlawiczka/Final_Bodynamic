@@ -16,5 +16,18 @@
 }
 
 .envelope_row_c {
-  background-color: value.$white;
+  margin: value.$spacer/3;
+}
+
+.content_main,
+.content_next {
+  padding: value.$spacer/4;
+}
+
+@media screen and (max-width: 700px) {
+  .content_main,
+  .content_next {
+    display: block;
+    text-align: center;
+  }
 }

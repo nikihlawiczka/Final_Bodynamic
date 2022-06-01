@@ -6,7 +6,7 @@
 }
 
 .envelope_main {
-  margin: value.$spacer/2 0;
+  padding: value.$spacer/2 0 value.$spacer/3 0;
   font-size: value.$spacer/1.5;
   color: value.$red;
   text-transform: uppercase;

@@ -1,7 +1,24 @@
 @use "value";
 
 .meet_ {
+  /* width: calc(100% - 300px); */
   text-align: center;
+}
+
+.offer_main {
+  margin: value.$spacer/2 0;
+  text-align: center;
+  font-size: value.$spacer;
+  background-color: value.$red;
+  opacity: 0.75;
+}
+
+.tab__content {
+  text-align: center;
+}
+
+.tab__content {
+  margin: value.$spacer;
 }
 
 .foto_terapeut {
@@ -10,7 +27,11 @@
 }
 
 .meet_terapeut {
-  margin: value.$spacer;
+  /*  margin: value.$spacer; */
+}
+
+.meet_offer {
+  margin: 0 0 value.$spacer 0;
 }
 
 .terapeut_name {
@@ -24,10 +45,20 @@
   font-style: italic;
 }
 
+.food_tab {
+  margin: value.$spacer;
+}
+
+.food_wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 5px;
+}
+
 @media screen and (min-width: 700px) {
   .meet_terapeut {
-    display: flex;
-    margin: value.$spacer * 2;
+    /* display: flex; */
+    /* margin: value.$spacer * 2; */
     align-items: center;
     gap: value.$spacer;
   }
@@ -37,8 +68,20 @@
   }
 
   .meet_ {
+    display: flex;
     margin: auto;
+    gap: 30px;
     text-align: center;
-    width: calc(100% - 100px);
+    width: calc(100% - 300px);
+  }
+
+  /* display: flex;
+    gap: value.$spacer/2; */
+}
+
+@media screen and (min-width: 1000px) {
+  .food_wrap {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    margin: auto;
   }
 }

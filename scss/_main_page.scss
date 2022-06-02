@@ -1,5 +1,23 @@
 @use "value";
 
+////////// ÚVOD
+.title {
+  margin: value.$spacer/2 auto;
+  text-align: center;
+}
+
+.title_main {
+  margin: 0;
+  font-size: 25px;
+}
+
+.title_name {
+  margin: 0;
+  font-family: "Satisfy", cursive;
+  font-size: 80px;
+  color: value.$red;
+}
+
 .offer_personal,
 .offer_group,
 .offer_food {

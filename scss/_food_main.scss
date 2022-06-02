@@ -1,7 +1,6 @@
 @use "value";
 
 .meet_ {
-  /* width: calc(100% - 300px); */
   text-align: center;
 }
 
@@ -26,16 +25,12 @@
   border-radius: 5%;
 }
 
-.meet_terapeut {
-  /*  margin: value.$spacer; */
-}
-
 .meet_offer {
   margin: 0 0 value.$spacer 0;
 }
 
 .terapeut_name {
-  margin: 0;
+  margin: value.$spacer/3 0 0 0;
   font-weight: bold;
   font-size: value.$spacer;
 }
@@ -57,8 +52,6 @@
 
 @media screen and (min-width: 700px) {
   .meet_terapeut {
-    /* display: flex; */
-    /* margin: value.$spacer * 2; */
     align-items: center;
     gap: value.$spacer;
   }
@@ -74,9 +67,6 @@
     text-align: center;
     width: calc(100% - 300px);
   }
-
-  /* display: flex;
-    gap: value.$spacer/2; */
 }
 
 @media screen and (min-width: 1000px) {

@@ -1,0 +1,25 @@
+@use "value";
+
+.wrap_program {
+  display: none;
+}
+
+.download_program {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .wrap_program {
+    display: block;
+    margin: value.$spacer/3;
+    text-align: center;
+  }
+
+  .wrap_program img {
+    width: 60%;
+    margin: auto;
+  }
+  .download_program {
+    display: none;
+  }
+}

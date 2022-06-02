@@ -12,10 +12,6 @@
   text-transform: uppercase;
 }
 
-.content_main {
-  font-weight: bold;
-}
-
 .envelope_row_c {
   margin: 0;
 
@@ -25,6 +21,9 @@
   }
 }
 
+.content_main {
+  font-weight: bold;
+}
 .content_next {
   text-align: right;
 }
@@ -38,9 +37,6 @@
   .content_main,
   .content_next {
     display: block;
-  }
-  .content_main,
-  .content_next {
     text-align: center;
   }
 }

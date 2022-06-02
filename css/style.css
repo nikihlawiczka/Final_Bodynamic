@@ -33,10 +33,6 @@ main {
   background-color: #222;
 }
 
-.background {
-  background-color: whitesmoke;
-}
-
 hr {
   margin: 0;
 }
@@ -182,6 +178,23 @@ footer {
   color: white;
 }
 
+.title {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.title_main {
+  margin: 0;
+  font-size: 25px;
+}
+
+.title_name {
+  margin: 0;
+  font-family: "Satisfy", cursive;
+  font-size: 80px;
+  color: #ffa895;
+}
+
 .offer_personal,
 .offer_group,
 .offer_food {
@@ -268,8 +281,17 @@ footer {
   border-radius: 5%;
 }
 
+.wrap_program {
+  display: none;
+}
+
+.download_program {
+  text-align: center;
+}
+
 @media screen and (min-width: 600px) {
   .wrap_program {
+    display: block;
     margin: 10px;
     text-align: center;
   }
@@ -277,6 +299,10 @@ footer {
   .wrap_program img {
     width: 60%;
     margin: auto;
+  }
+
+  .download_program {
+    display: none;
   }
 }
 .view {
@@ -290,47 +316,14 @@ footer {
     width: calc(100% - 100px);
   }
 }
-.title {
-  margin: 15px auto;
-  text-align: center;
-}
-
-.title_main {
-  margin: 0;
-  font-size: 25px;
-}
-
-.title_name {
-  margin: 0;
-  font-family: "Satisfy", cursive;
-  font-size: 80px;
-  color: #ffa895;
-}
-
 .text_text {
   margin: auto;
   text-align: center;
   width: calc(100% - 200px);
-  /* background-color: value.$white; */
-}
-
-.text_head {
-  margin: 0;
-  padding: 30px 0 0 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.text__head {
-  margin-bottom: 0;
-  text-align: center;
-  padding-bottom: 30px;
 }
 
 .text_text {
   margin-top: 15px;
-  /*  margin-bottom: value.$spacer * 2; */
 }
 
 @media screen and (min-width: 700px) {
@@ -344,10 +337,6 @@ footer {
 
   .title_name {
     font-size: 90px;
-  }
-
-  .text {
-    text-align: justify;
   }
 }
 .meet {
@@ -397,6 +386,8 @@ footer {
 }
 
 .tab_main {
+  font-weight: bold;
+  font-size: 20px;
   margin: 10px 0;
   font-weight: bold;
 }
@@ -405,20 +396,6 @@ footer {
   display: flex;
   justify-content: center;
   gap: 15px;
-}
-
-@media screen and (min-width: 600px) {
-  .tab_price {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-  }
-}
-.tab_main {
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .tab_title {
@@ -435,9 +412,8 @@ footer {
   .tab {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    justify-items: space-between;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .group {
@@ -597,16 +573,16 @@ footer {
   text-transform: uppercase;
 }
 
-.content_main {
-  font-weight: bold;
-}
-
 .envelope_row_c {
   margin: 0;
 }
 .envelope_row_c .content_main,
 .envelope_row_c .content_next {
   background-color: whitesmoke;
+}
+
+.content_main {
+  font-weight: bold;
 }
 
 .content_next {
@@ -622,10 +598,29 @@ footer {
   .content_main,
 .content_next {
     display: block;
-  }
-
-  .content_main,
-.content_next {
     text-align: center;
+  }
+}
+.background {
+  background-color: whitesmoke;
+}
+
+.text_head {
+  margin: 0;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text__head {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .text {
+    text-align: justify;
   }
 }/*# sourceMappingURL=style.css.map */

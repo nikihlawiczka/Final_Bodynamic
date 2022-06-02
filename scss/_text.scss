@@ -1,48 +1,19 @@
 @use "value";
 
-////////// hlavní stránka
-.title {
-  margin: value.$spacer/2 auto;
-  text-align: center;
-}
-
-.title_main {
-  margin: 0;
-  font-size: 25px;
-}
-
-.title_name {
-  margin: 0;
-  font-family: "Satisfy", cursive;
-  font-size: 80px;
-  color: value.$red;
-}
-
 /////////////////
 .text_text {
   margin: auto;
   text-align: center;
   width: calc(100% - 200px);
-  /* background-color: value.$white; */
-}
-
-.text_head {
-  margin: 0;
-  padding: value.$spacer 0 0 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.text__head {
-  margin-bottom: 0;
-  text-align: center;
-  padding-bottom: value.$spacer;
 }
 
 .text_text {
   margin-top: value.$spacer/2;
-  /*  margin-bottom: value.$spacer * 2; */
+}
+
+.first {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 700px) {

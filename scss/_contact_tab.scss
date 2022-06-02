@@ -1,8 +1,21 @@
 @use "value";
 
+.tab_item {
+  margin-top: value.$spacer;
+  text-align: center;
+}
+
 .tab_main {
   font-weight: bold;
   font-size: 20px;
+  margin: value.$spacer/3 0;
+  font-weight: bold;
+}
+
+.tab__main {
+  display: flex;
+  justify-content: center;
+  gap: value.$spacer/2;
 }
 
 .tab_title {
@@ -18,8 +31,7 @@
 @media screen and (min-width: 600px) {
   .tab {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-items: space-between;
+    grid-template-columns: repeat(2, minmax(200px, auto));
     align-items: center;
     justify-content: center;
   }

@@ -10,16 +10,16 @@
   text-transform: uppercase;
 }
 
-.content_main {
-  font-weight: bold;
-}
-
 .envelope_row_c {
   margin: 0;
 }
 .envelope_row_c .content_main,
 .envelope_row_c .content_next {
   background-color: whitesmoke;
+}
+
+.content_main {
+  font-weight: bold;
 }
 
 .content_next {
@@ -35,10 +35,6 @@
   .content_main,
 .content_next {
     display: block;
-  }
-
-  .content_main,
-.content_next {
     text-align: center;
   }
 }/*# sourceMappingURL=envelope.css.map */

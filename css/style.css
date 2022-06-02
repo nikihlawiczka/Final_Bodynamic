@@ -269,12 +269,14 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-  .wrap_program img {
-    width: calc(100% - 200px);
-  }
-
   .wrap_program {
     margin: 10px;
+    text-align: center;
+  }
+
+  .wrap_program img {
+    width: 60%;
+    margin: auto;
   }
 }
 .view {

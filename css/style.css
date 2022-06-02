@@ -237,6 +237,10 @@ footer {
     margin: 0;
   }
 }
+.wrap_img {
+  line-height: 0;
+}
+
 .main_photo {
   width: 100%;
   max-height: 300px;

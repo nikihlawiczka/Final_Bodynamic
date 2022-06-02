@@ -203,7 +203,7 @@ footer {
 
 .offer_text {
   position: absolute;
-  bottom: 1px;
+  bottom: 0;
   padding: 10px 0;
   margin: 0;
   width: 100%;
@@ -265,11 +265,18 @@ footer {
 
 .album img {
   width: 100%;
-  /*  object-fit: cover;
-  overflow: hidden; */
   border-radius: 5%;
 }
 
+@media screen and (min-width: 600px) {
+  .wrap_program img {
+    width: calc(100% - 200px);
+  }
+
+  .wrap_program {
+    margin: 10px;
+  }
+}
 .view {
   margin: auto;
   padding: 0 10px;

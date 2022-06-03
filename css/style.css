@@ -517,10 +517,7 @@ footer {
 .text_text {
   margin: auto;
   text-align: center;
-  width: calc(100% - 200px);
-}
-
-.text_text {
+  width: calc(100% - 100px);
   margin-top: 15px;
 }
 

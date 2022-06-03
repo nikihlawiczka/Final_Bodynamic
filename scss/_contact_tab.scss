@@ -1,7 +1,7 @@
 @use "value";
 
 .tab_item {
-  margin-top: value.$spacer;
+  margin: value.$spacer;
   text-align: center;
 }
 

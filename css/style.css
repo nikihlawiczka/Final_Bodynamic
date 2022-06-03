@@ -1,3 +1,21 @@
+.background {
+  background-color: whitesmoke;
+}
+
+.text_head {
+  margin: 0;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text__head {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -20,10 +38,6 @@ main {
   min-height: calc(100vh - 74px - 52px - 30px - 84px);
 }
 
-.contact__mobile-mobil {
-  display: none;
-}
-
 .a_link {
   text-decoration: none;
   color: #ffa895;
@@ -37,16 +51,216 @@ hr {
   margin: 0;
 }
 
-.first {
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .hr_small {
   margin: 30px auto 30px auto;
   width: 200px;
 }
 
+.meet {
+  text-align: center;
+}
+
+.meet_coach {
+  margin: 30px;
+}
+
+.foto_coach,
+.foto_coach_jahodova {
+  width: 300px;
+  border-radius: 5%;
+}
+
+.coach_name {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.coach_tale {
+  margin: 10px 0;
+  font-style: italic;
+}
+.coach_tale .coach_normal {
+  margin-top: 10px;
+  font-style: normal;
+}
+
+@media screen and (min-width: 700px) {
+  .meet_coach {
+    display: flex;
+    margin: 60px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .foto_coach_jahodova {
+    order: 1;
+  }
+}
+.tab_item {
+  margin: 30px;
+  text-align: center;
+}
+
+.tab_main {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.tab__main {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tab_title {
+  font-weight: bold;
+}
+
+.tab_photo {
+  width: 300px;
+  border-radius: 5%;
+  border: 1px solid #222;
+}
+
+@media screen and (min-width: 600px) {
+  .tab {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, auto));
+    align-items: center;
+    justify-content: center;
+  }
+}
+.meet_ {
+  text-align: center;
+}
+
+.offer_main {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 30px;
+  background-color: #ffa895;
+  opacity: 0.75;
+}
+
+.tab__content {
+  text-align: center;
+}
+
+.tab__content {
+  margin: 30px;
+}
+
+.foto_terapeut {
+  width: 300px;
+  border-radius: 5%;
+}
+
+.meet_offer {
+  margin: 0 0 30px 0;
+}
+
+.terapeut_name {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.terapeut_tale {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.food_tab {
+  margin: 30px;
+}
+
+.food_wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .meet_terapeut {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .foto_terapeut {
+    order: 1;
+  }
+
+  .meet_ {
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    text-align: center;
+    width: calc(100% - 300px);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .food_wrap {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    margin: auto;
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  background-color: #222;
+}
+
+.footer__copyright {
+  color: white;
+}
+
+.group {
+  text-align: center;
+}
+
+.group_main {
+  margin: 30px;
+}
+
+.group_name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.foto_group,
+.foto_group_dif {
+  width: 300px;
+  border-radius: 5%;
+}
+
+.group_tale {
+  margin: 10px 0;
+}
+
+.group_normal {
+  margin-top: 10px;
+  font-style: normal;
+}
+
+@media screen and (min-width: 700px) {
+  .group_main {
+    display: flex;
+    margin: 60px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .foto_group_dif {
+    order: 1;
+  }
+}
 .contact {
   display: flex;
   justify-content: space-between;
@@ -91,6 +305,78 @@ hr {
 
   .contact__mobile-mobil {
     display: none;
+  }
+}
+.title {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.title_main {
+  margin: 0;
+  font-size: 25px;
+}
+
+.title_name {
+  margin: 0;
+  font-family: "Satisfy", cursive;
+  font-size: 80px;
+  color: #ffa895;
+}
+
+.offer_personal,
+.offer_group,
+.offer_food {
+  margin: 15px auto;
+  width: calc(100% - 20px);
+  max-width: 300px;
+}
+
+.offer_personal,
+.offer_group,
+.offer_food {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  outline: 1px solid black;
+  border-radius: 5%;
+}
+
+.offer_text {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ffa895;
+  opacity: 0.6;
+  color: black;
+  font-weight: bold;
+}
+
+.offer_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.75s;
+}
+
+.offer_img:hover {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 700px) {
+  .offer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .offer_personal,
+.offer_group,
+.offer_food {
+    margin: 0;
   }
 }
 .menu_checkbox {
@@ -165,103 +451,6 @@ hr {
     font-size: 20px;
   }
 }
-footer {
-  position: relative;
-  bottom: 0;
-  padding: 15px;
-  width: 100%;
-  text-align: center;
-  background-color: #222;
-}
-
-.footer__copyright {
-  color: white;
-}
-
-.title {
-  margin: 15px auto;
-  text-align: center;
-}
-
-.title_main {
-  margin: 0;
-  font-size: 25px;
-}
-
-.title_name {
-  margin: 0;
-  font-family: "Satisfy", cursive;
-  font-size: 80px;
-  color: #ffa895;
-}
-
-.offer_personal,
-.offer_group,
-.offer_food {
-  margin: 15px auto;
-  width: calc(100% - 20px);
-  max-width: 300px;
-}
-
-.offer_personal,
-.offer_group,
-.offer_food {
-  position: relative;
-  overflow: hidden;
-  width: 300px;
-  height: 300px;
-  outline: 1px solid black;
-  border-radius: 5%;
-}
-
-.offer_text {
-  position: absolute;
-  bottom: 0;
-  padding: 10px 0;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #ffa895;
-  opacity: 0.6;
-  color: black;
-  font-weight: bold;
-}
-
-.offer_img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: transform 0.75s;
-}
-
-.offer_img:hover {
-  transform: scale(1.15);
-}
-
-@media screen and (min-width: 700px) {
-  .offer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .offer_personal,
-.offer_group,
-.offer_food {
-    margin: 0;
-  }
-}
-.wrap_img {
-  line-height: 0;
-}
-
-.main_photo {
-  width: 100%;
-  max-height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  gap: 30px;
-}
-
 .album {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -305,242 +494,6 @@ footer {
     display: none;
   }
 }
-.view {
-  margin: auto;
-  padding: 0 10px;
-}
-
-@media screen and (min-width: 700px) {
-  .view {
-    margin: auto;
-    width: calc(100% - 100px);
-  }
-}
-.text_text {
-  margin: auto;
-  text-align: center;
-  width: calc(100% - 200px);
-}
-
-.text_text {
-  margin-top: 15px;
-}
-
-@media screen and (min-width: 700px) {
-  .title {
-    margin: 30px;
-  }
-
-  .title_main {
-    font-size: 35px;
-  }
-
-  .title_name {
-    font-size: 90px;
-  }
-}
-.meet {
-  text-align: center;
-}
-
-.meet_coach {
-  margin: 30px;
-}
-
-.foto_coach,
-.foto_coach_jahodova {
-  width: 300px;
-  border-radius: 5%;
-}
-
-.coach_name {
-  margin: 10px 0 0 0;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.coach_tale {
-  margin: 10px 0;
-  font-style: italic;
-}
-.coach_tale .coach_normal {
-  margin-top: 10px;
-  font-style: normal;
-}
-
-@media screen and (min-width: 700px) {
-  .meet_coach {
-    display: flex;
-    margin: 60px;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .foto_coach_jahodova {
-    order: 1;
-  }
-}
-.tab_item {
-  margin: 30px 30px 0 0;
-  text-align: center;
-}
-
-.tab_main {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 10px 0;
-  font-weight: bold;
-}
-
-.tab__main {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.tab_title {
-  font-weight: bold;
-}
-
-.tab_photo {
-  width: 300px;
-  border-radius: 5%;
-  border: 1px solid #222;
-}
-
-@media screen and (min-width: 600px) {
-  .tab {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-.group {
-  text-align: center;
-}
-
-.group_main {
-  margin: 30px;
-}
-
-.group_name {
-  margin: 0;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.foto_group,
-.foto_group_dif {
-  width: 300px;
-  border-radius: 5%;
-}
-
-.group_tale {
-  margin: 10px 0;
-}
-
-.group_normal {
-  margin-top: 10px;
-  font-style: normal;
-}
-
-@media screen and (min-width: 700px) {
-  .group_main {
-    display: flex;
-    margin: 60px;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .foto_group_dif {
-    order: 1;
-  }
-}
-.meet_ {
-  /* width: calc(100% - 300px); */
-  text-align: center;
-}
-
-.offer_main {
-  margin: 15px 0;
-  text-align: center;
-  font-size: 30px;
-  background-color: #ffa895;
-  opacity: 0.75;
-}
-
-.tab__content {
-  text-align: center;
-}
-
-.tab__content {
-  margin: 30px;
-}
-
-.foto_terapeut {
-  width: 300px;
-  border-radius: 5%;
-}
-
-.meet_terapeut {
-  /*  margin: value.$spacer; */
-}
-
-.meet_offer {
-  margin: 0 0 30px 0;
-}
-
-.terapeut_name {
-  margin: 0;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.terapeut_tale {
-  margin: 10px 0;
-  font-style: italic;
-}
-
-.food_tab {
-  margin: 30px;
-}
-
-.food_wrap {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 5px;
-}
-
-@media screen and (min-width: 700px) {
-  .meet_terapeut {
-    /* display: flex; */
-    /* margin: value.$spacer * 2; */
-    align-items: center;
-    gap: 30px;
-  }
-
-  .foto_terapeut {
-    order: 1;
-  }
-
-  .meet_ {
-    display: flex;
-    margin: auto;
-    gap: 30px;
-    text-align: center;
-    width: calc(100% - 300px);
-  }
-
-  /* display: flex;
-    gap: value.$spacer/2; */
-}
-@media screen and (min-width: 1000px) {
-  .food_wrap {
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    margin: auto;
-  }
-}
 .wrap {
   margin-top: 30px;
 }
@@ -561,6 +514,49 @@ footer {
   text-align: center;
 }
 
+.text_text {
+  margin: auto;
+  text-align: center;
+  width: calc(100% - 200px);
+}
+
+.text_text {
+  margin-top: 15px;
+}
+
+.first {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  .title {
+    margin: 30px;
+  }
+
+  .title_main {
+    font-size: 35px;
+  }
+
+  .title_name {
+    font-size: 90px;
+  }
+
+  .text {
+    text-align: justify;
+  }
+}
+.view {
+  margin: auto;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .view {
+    margin: auto;
+    width: calc(100% - 100px);
+  }
+}
 .envelope {
   margin: auto;
   border-spacing: 0;
@@ -601,26 +597,14 @@ footer {
     text-align: center;
   }
 }
-.background {
-  background-color: whitesmoke;
+.wrap_img {
+  line-height: 0;
 }
 
-.text_head {
-  margin: 0;
-  padding: 30px 0 0 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.text__head {
-  margin-bottom: 0;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-@media screen and (min-width: 700px) {
-  .text {
-    text-align: justify;
-  }
+.main_photo {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  gap: 30px;
 }/*# sourceMappingURL=style.css.map */
